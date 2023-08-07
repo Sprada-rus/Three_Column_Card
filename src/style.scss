@@ -28,21 +28,22 @@ body {
   margin: 0;
   min-width: 375px;
   min-height: 100%;
-  background-color: #ddd;
-  color: #fff;
+  background-color: $very-light-gray;
+  color: $transparent-white;
 
   footer {
     position: fixed;
     bottom: 1rem;
     width: 100%;
     z-index: 0;
+    color: hsla(0, 0%, 0%, .5);
 
     p {
       text-align: center;
     }
 
     a {
-      color: #eee;
+      color: hsla(239, 43%, 31%, 0.3);
       text-decoration: none;
     }
   }
@@ -156,6 +157,8 @@ body {
 
       .card {
         transition: transform .3s linear;
+        min-width: 0;
+        max-width: 300px;
         
         &:hover {
           transform: scale(1.1, 1.1);
